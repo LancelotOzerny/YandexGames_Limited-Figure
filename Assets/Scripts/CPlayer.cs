@@ -4,6 +4,7 @@ public class CPlayer : MonoBehaviour
 {
     [SerializeField] private CRoad road;
     [SerializeField] private float speed = 4f;
+    [SerializeField] private bool reverse;
 
     private void Start()
     {
@@ -13,7 +14,31 @@ public class CPlayer : MonoBehaviour
         }
 
         transform.position = road.CurrentPoint.position;
-        road.Next();
+        ChangePoint();
+    }
+
+    /// <summary>
+    /// Метод, который позволяет изменить направление движения персонажа
+    /// </summary>
+    public void Reverse()
+    {
+        reverse = !reverse;
+        ChangePoint();
+    }
+
+    /// <summary>
+    /// Метод, который в зависимости от направления движения устанавливает следующую точку
+    /// </summary>
+    private void ChangePoint()
+    {
+        if (reverse)
+        {
+            road.Prev();
+        }
+        else
+        {
+            road.Next();
+        }
     }
 
     private void Update()
