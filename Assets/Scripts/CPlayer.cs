@@ -43,7 +43,7 @@ public class CPlayer : MonoBehaviour
 
     private void Update()
     {
-        if (road == null)
+        if (road == null || Game.Pause)
         {
             return;
         }
