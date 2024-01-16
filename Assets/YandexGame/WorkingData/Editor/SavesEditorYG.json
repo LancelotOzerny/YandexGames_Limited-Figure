@@ -1,9 +1,9 @@
 {
-    "idSave": 245,
+    "idSave": 321,
     "isFirstSession": false,
     "language": "ru",
     "promptDone": false,
     "musicOn": true,
-    "soundsOn": true,
+    "soundsOn": false,
     "starsOn": true
 }

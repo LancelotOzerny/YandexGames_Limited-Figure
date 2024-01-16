@@ -1526,7 +1526,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: <color=#79BDFD>02</color>:<color=#79D5F9>02</color>:<color=#7AFAF7>02</color>
+  m_Text: <color=#79BDFD>02</color>:<color=#79D5F9>02</color>
 --- !u!222 &1096023375
 CanvasRenderer:
   m_ObjectHideFlags: 0
