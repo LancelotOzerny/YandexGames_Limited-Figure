@@ -5,14 +5,6 @@ public class CStar : MonoBehaviour
 {
     private static System.Random rand = new System.Random();
 
-    private void Awake()
-    {
-        if (YandexGame.savesData.starsOn == false)
-        {
-            Destroy(this.gameObject);
-        }
-    }
-
     private void Start()
     {
         int scale = rand.Next(1, 10);
