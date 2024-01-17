@@ -15,6 +15,11 @@ public class CRoad : MonoBehaviour
         }
     }
 
+    public void SetCurrentGroup(int value)
+    {
+        currentGroup = value;
+    }
+
     public void Next()
     {
         if (++currentPoint >= points[currentGroup].Points.Count)
