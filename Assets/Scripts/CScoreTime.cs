@@ -49,7 +49,7 @@ public class CScoreTime : MonoBehaviour
     {
         if (YandexGame.savesData.bestScore < score)
         {
-            YandexGame.NewLBScoreTimeConvert(leaderboard, score);
+            YandexGame.NewLBScoreTimeConvert(leaderboard, score * 1000);
             YandexGame.savesData.bestScore = score;
             YandexGame.SaveProgress();
         }
