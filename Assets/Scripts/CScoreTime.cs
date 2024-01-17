@@ -26,6 +26,11 @@ public class CScoreTime : MonoBehaviour
 
     private void Update()
     {
+        if (Game.Pause)
+        {
+            return;
+        }
+
         timer -= Time.deltaTime;
 
         if (timer < 0)
