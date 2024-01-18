@@ -15,7 +15,7 @@ public class CNLO : CIntervalGenerator
 
     protected override void Generate()
     {
-        if (this.bullet == null)
+        if (this.bullet == null || Game.Pause)
         {
             return;
         }

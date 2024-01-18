@@ -22,7 +22,7 @@ public class CBullet : MonoBehaviour
 
         if (A > 0)
         {
-            angle = -angle;
+            angle = - angle;
         }
 
         transform.localRotation = Quaternion.Euler(0, 0, angle);
@@ -30,11 +30,6 @@ public class CBullet : MonoBehaviour
 
     private void Update()
     {
-        if (Game.Pause)
-        {
-            return;
-        }
-
         float distance = Vector2.Distance(transform.position, target);
         if (distance < 0.2f)
         {
